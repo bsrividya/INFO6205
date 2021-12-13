@@ -4,6 +4,11 @@
 
 package edu.neu.coe.info6205.util;
 
+import edu.neu.coe.info6205.sort.elementary.InsertionSort;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Random;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -31,6 +36,81 @@ import static edu.neu.coe.info6205.util.Utilities.formatWhole;
  */
 public class Benchmark_Timer<T> implements Benchmark<T> {
 
+    public static void main(String []args){
+
+        InsertionSort ins = new InsertionSort<Integer>();
+        Benchmark_Timer<Integer[]> timer = new Benchmark_Timer<>("Benchmarking Insertion Sort", null, arr -> ins.sort(arr, 0, arr.length), null);
+
+        int cutoff = 16384;
+
+        for (int i = 16; i<cutoff; i*=2){
+
+            int arrSize = i;
+
+            System.out.println("Array Size: " + arrSize);
+
+            //random order array
+            Supplier<Integer[]> supplier1 =  () -> {
+                Random rand = new Random();
+                Integer[] randomArr = new Integer[arrSize];
+                //for generating a random array
+                for(int j = 0; j < arrSize; j++){
+                    randomArr[j] = rand.nextInt(arrSize*10);
+                }
+                return randomArr;
+            };
+
+            double randomTime = timer.runFromSupplier(supplier1, 50);
+            System.out.println("Random ordered array: " + randomTime);
+
+            //ordered array
+            Supplier<Integer[]> supplier2 =  () -> {
+                Random rand = new Random();
+                Integer[] orderedArray = new Integer[arrSize];
+                //for generating a random array
+                for(int j = 0; j < arrSize; j++){
+                    orderedArray[j] = rand.nextInt(arrSize*10);
+                }
+                Arrays.sort(orderedArray);
+                return orderedArray;
+            };
+
+            double orderedTime = timer.runFromSupplier(supplier2, 50);
+            System.out.println("sorted array: " + orderedTime);
+
+            //reverse ordered array
+            Supplier<Integer[]> supplier3 =  () -> {
+                Random rand = new Random();
+                Integer[] revOrderedArray = new Integer[arrSize];
+                //for generating a random array
+                for(int j = 0; j < arrSize; j++){
+                    revOrderedArray[j] = rand.nextInt(arrSize*10);
+                }
+                Arrays.sort(revOrderedArray, Collections.reverseOrder());
+                return revOrderedArray;
+            };
+
+
+            double revOrderedTime = timer.runFromSupplier(supplier3, 50);
+            System.out.println("reverse sorted array: " + revOrderedTime);
+
+            Supplier<Integer[]> supplier4 =  () -> {
+                Random rand = new Random();
+                Integer[] partialOrderedArray = new Integer[arrSize];
+                //for generating a random array
+                for(int j = 0; j < arrSize; j++){
+                    partialOrderedArray[j] = rand.nextInt(arrSize*10);
+                }
+
+                for(int k = arrSize/2; k<arrSize; k++) {
+                    partialOrderedArray[k] = rand.nextInt(arrSize*10);
+                }
+                return partialOrderedArray;
+            };
+            double partialOrderedTime = timer.runFromSupplier(supplier4, 50);
+            System.out.println("partially sorted array: " + partialOrderedTime);
+        }
+    }
     /**
      * Calculate the appropriate number of warmup runs.
      *

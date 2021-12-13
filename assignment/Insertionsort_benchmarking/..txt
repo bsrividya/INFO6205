@@ -1,0 +1,111 @@
+
+Array Size: 16
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+Random ordered array: 0.0
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+sorted array: 0.0
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+reverse sorted array: 0.02
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+partially sorted array: 0.0
+
+
+Array Size: 32
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+Random ordered array: 0.0
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+sorted array: 0.0
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+reverse sorted array: 0.04
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+partially sorted array: 0.0
+
+
+Array Size: 64
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+Random ordered array: 0.0
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+sorted array: 0.02
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+reverse sorted array: 0.06
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+partially sorted array: 0.02
+
+
+Array Size: 128
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+Random ordered array: 0.1
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+sorted array: 0.04
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+reverse sorted array: 0.3
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+partially sorted array: 0.06
+
+
+Array Size: 256
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+Random ordered array: 0.08
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+sorted array: 0.06
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+reverse sorted array: 0.28
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+partially sorted array: 0.1
+
+
+Array Size: 512
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+Random ordered array: 0.22
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+sorted array: 0.14
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+reverse sorted array: 0.72
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+partially sorted array: 0.24
+
+
+Array Size: 1024
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+Random ordered array: 0.86
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+sorted array: 0.56
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+reverse sorted array: 2.62
+2021-12-13 13:53:05 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+partially sorted array: 0.88
+
+
+Array Size: 2048
+2021-12-13 13:53:06 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+Random ordered array: 3.32
+2021-12-13 13:53:06 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+sorted array: 1.24
+2021-12-13 13:53:06 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+reverse sorted array: 7.18
+2021-12-13 13:53:06 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+partially sorted array: 3.02
+
+
+Array Size: 4096
+2021-12-13 13:53:06 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+Random ordered array: 11.84
+2021-12-13 13:53:07 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+sorted array: 1.96
+2021-12-13 13:53:07 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+reverse sorted array: 24.58
+2021-12-13 13:53:08 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+partially sorted array: 12.08
+
+
+Array Size: 8192
+2021-12-13 13:53:09 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+Random ordered array: 48.64
+2021-12-13 13:53:12 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+sorted array: 1.76
+2021-12-13 13:53:12 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+reverse sorted array: 98.56
+2021-12-13 13:53:17 INFO  Benchmark_Timer - Begin run: Benchmarking Insertion Sort with 50 runs
+partially sorted array: 49.14
+
+Process finished with exit code 0
